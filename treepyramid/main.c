@@ -10,51 +10,40 @@ Welcome to GDB Online.
 
 int main()
 {
-    int i,j,k,l,m,n=5;
+    int i,j,k,n=5;
     for(i=0;i<n;i++)
     {
-        for(k=0;k<n-i;k++)
-        {
-            printf("  ");
+        for(j=0;j<n-i;j++){
+            printf(" ");
         }
-        for(j=0;j<=0;j++)
-        {
-            printf("* ");
-            
-        }
-        for(l=0;l<i;l++)
-        {
-            printf("    ");
-        }
-        for(m=0;m<1;m++)
+        for(k=0;k<=i;k++)
         {
             printf("* ");
         }
-        
         printf("\n");
-    }   
-    for(i=0;i<=n;i++)
+    }
+    for(i=0;i<n;i++)
     {
-        for(k=0;k<i;k++)
-        {
-            printf("  ");
+        for(j=0;j<n-i;j++){
+            printf(" ");
         }
-        for(j=0;j<=0;j++)
-        {
-            printf("* ");
-            
-        }
-        for(l=0;l<n-i;l++)
-        {
-            printf("    ");
-        }
-        for(m=0;m<1;m++)
+        for(k=0;k<=i;k++)
         {
             printf("* ");
         }
-        
         printf("\n");
-    }   
-    
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n-2;j++)
+        {
+            printf(" ");
+        }
+        for(k=0;k<n-2;k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
     return 0;
 }
